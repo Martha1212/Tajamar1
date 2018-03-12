@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .control-group label label {
+            display: inline-block;
+            width: 20%;
+            min-width: 10rem;
+        }
+
+        .control-group imput:not([]) imput {
+            width: 40;
+            min-width: 10rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo de formulario</h1>
+    </header>
+    <main>
+        <form action="" method="GET">
+            <fieldset>
+                <legend>datos personales</legend>
+                <div class="control-group"></div>
+                <label for="nombre">Escribe tu nombre</label>
+                <input type="text" name="nombre" id="nombre" maxlength="20">
+
+                <div class="control-group"></div>
+                <label for="Apellido">Escribe tu Apellido</label>
+                <input type="text" name="Apellido" id="Apellido" placeholder="Escribe tus dos apellidos">
+                <div class="control-group"></div>
+                <label for="curso">Escribe tu curso</label>
+                <input type="text" name="Apellido" id="curso" value="Desarrolo web">
+                <div class="check-group">
+                    <input type="checkbox" name="isOK2" id="isOK2">
+                    <input for="isOK2">estoy de acuerdo
+                    <con class="">
+                </div>
+                <legend>Que turno quieres</legend>
+                <div class="radio group">
+                    <input type="radio" name="turno" id="mañana" value="mañana">
+                    <label for="mañana">mañana</label>
+                    <input type="radio" name="turno" id="tarde" value="tarde">
+                    <label for="tarde">mañana</label>
+                </div>
+
+                
+
+                <div class="control-proup">
+                    <label for="curso">selecciona tu curso</label>
+                    <select name="curso" id="curso">
+                        <option value="front" >Desarrollo From1</option>
+                        <option value="web" >Desarrollo From2</option>
+                        <option value="">Desarrollo From3</option>
+                        <option >Desarrollo From4</option>
+                    </select>
+
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos </legend>
+                <textarea name="datos" id="datos" cols="30" rows="10"></textarea> No te moleste en añadir nada
+
+            </fieldset>
+
+            <button type="button">saludar</button>
+            <button type="submit">Enviar"</button>
+
+
+
+
+        </form>
+    </main>
+</body>
+
+</html>
