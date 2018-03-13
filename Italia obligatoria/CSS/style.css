@@ -7,5 +7,15 @@ table {
 
     border-collapse: collapse;
 }
+.italia{
+width: 50rem;
+height: 20rem;
 
-  
+
+}
+.aside{
+    float: right;
+    padding: 0;
+    margin: 0;
+    
+}
