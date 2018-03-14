@@ -1,0 +1,28 @@
+{
+  "name": "tajamar1",
+  "version": "1.0.0",
+  "description": "Ejercios del modulo front",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martha1212/Tajamar1.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS",
+    "Learning"
+  ],
+  "author": "Martha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martha1212/Tajamar1/issues"
+  },
+  "homepage": "https://github.com/Martha1212/Tajamar1#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
