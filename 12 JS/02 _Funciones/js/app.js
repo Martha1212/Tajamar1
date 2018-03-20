@@ -1,7 +1,8 @@
-//Nombres en js utilizan camelCase
+// Nombres en JS utilizan camelCase
 
 function saludar() {
+
     console.log("Hola Amigo")
 
+    
 }
-saludar();
