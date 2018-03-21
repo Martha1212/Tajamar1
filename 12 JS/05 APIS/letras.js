@@ -10,9 +10,8 @@ function ComprobarMayusculas (cadena = '') {
    
     if (cadena.toUpperCase() === cadena) {
         r = 1
-
+        
     } else if (cadena.toLowerCase() === cadena) {
-
         r = 2
     } 
     return r

@@ -6,7 +6,7 @@ Lenguaje de programacion
 - Operadores: +, -, *, /, %, // &&, !, typeof
 - APIs  
   - Core
-      - Funciones globales: ParsInt(), ParseFloat(), isNaN()
+      - Funciones globales: parsInt(), parseFloat(), isNaN()
       - Metodos de los objetos.
   - Host (browser, NodeJS)
       - objeto Windows -> BOM -> alert(), setTimeout()
