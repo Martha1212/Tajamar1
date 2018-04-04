@@ -1,0 +1,16 @@
+{
+  "name": "js_web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "..\\node_modules\\.bin\\http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MArtha",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
