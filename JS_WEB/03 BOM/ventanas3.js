@@ -1,77 +1,78 @@
-function app() {
+function app () {
 
     let eBtnAbrir = document.querySelector('#btnAbrir')
-    let eGoogle = document.querySelector('#btnGoogle')
-    let eImagen = document.querySelector('#btImagen')
+    let eBtnGoogle = document.querySelector('#btnGoogle')
+
+    let eBtnImagen = document.querySelector('#btnImagen')
+
     let eBtnCerrar = document.querySelector('#btnCerrar')
-    eBtnCerrar.disabled = "true"
+
     let ventana
+
     let aVentanas = []
 
+
+
     eBtnAbrir.addEventListener('click', btnAbrir)
+
     eBtnGoogle.addEventListener('click', btnGoogle)
+
     eBtnImagen.addEventListener('click', btnImagen)
+
     eBtnCerrar.addEventListener('click', btnCerrar)
 
-    function btnclick(ev) {
-        console.log(ev.target.id)
-        switch (ev.target.id) {
-            case "btnAbrir":
-                ventana = window.open()
-                aVentanas.push(ventana)
-                togleButtons()
-                break
-            case "btnCerrar":
-                aVentanas.forEach((v) => { v.close() })
-                togleButtons()
-                aVentanas = []
-                break
-        }
-    }
 
-    function btnAbrir() {
+
+
+
+    function btnAbrir () {
+
         ventana = window.open()
-        aVentanas.push(ventana)
-        ventana.document.write('<p> Documento recien creado</p>')
 
+        aVentanas.push(ventana)
+
+        ventana.document.write('<p>Documento recien creado</p>')
 
     }
-    function btnCerrar() {
-        aVentanas.forEach((item) => { v.close() })
+
+
+
+    function btnGoogle () {
+
+        ventana = window.open('http://google.es', '',
+
+        'top=200, left=300, width=400, height=300, status=yes, menubar=yes, scrollbars=yes' )
+
+        aVentanas.push(ventana)
+
+        console.log(aVentanas)
+
+    }
+
+
+
+    function btnImagen () {
+
+        ventana = window.open('33.jpg')
+
+        aVentanas.push(ventana)
+
+    }
+
+    
+
+    
+
+    function btnCerrar () {
+
+        aVentanas.forEach( (v) => {v.close()} )
+
         aVentanas = []
 
-
     }
-
 
 }
 
-window.addEventListener('load', app) // carga la pagina 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //app = function(){}  //app = () => {} se pueden escribir la funcion de estas maneras.
+window.addEventListener('load', app)
