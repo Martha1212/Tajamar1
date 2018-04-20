@@ -1,0 +1,82 @@
+
+.control-group {
+    padding: 0.4rem;
+}
+.control-group label {
+    display: inline-block;
+    width: 20%;
+    min-width: 10rem;
+}
+.control-group input:not([type="button"]) {
+    width: 40%;
+    min-width: 10rem;
+}
+.ocultar {
+    display: none;
+}
+body{
+    background:cyan;
+}    
+.titulo{
+    background: lightblue;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Rammetto One', cursive;
+    }
+    .subtitulo{
+        background:lightblue;
+        color:black;
+  font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    }
+.Identificacion{
+    margin: 0;
+        padding: 0;
+        float: left;
+        padding-right: 3rem;
+        width: 50%;
+        margin-right: 5%;
+}
+.Datos_personales{
+ height: 33%;
+}
+.Cursos{
+    margin-top: 0%;
+    padding: 0;
+    float: left;
+    padding-left: 3rem;
+    width: 40%;
+    margin-right: 0;
+    padding-bottom: 5rem ;
+}
+.divComentario{
+    margin-top: 1%;
+    padding: 0;
+    float: right;
+    padding-left: 3rem;
+    width: 33%;
+    margin-right: 0;
+}
+.Aficiones{
+    margin-top: 1%;
+    padding: 0;
+    float: right;
+    padding-left: 3rem;
+    width: 37%;
+    margin-right: 0;
+}
+.botones{
+    margin-top: 1%;
+    padding: 0;
+    float: left;
+    padding-left: 3rem;
+    width: 30%;
+    margin-right: 0;
+
+}
+

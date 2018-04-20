@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./formulario1.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Datos del Alumno</h1>
+    </header>
+    <main>
+        <form action="" method="GET" id='form1'>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div class="control-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="20" required minlength="2" autofocus>
+                </div>
+                <div class="control-group">
+                    <label for="apellido">Primer apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Escribe tus apellidos" required>
+                </div>
+                <div class="control-group">
+                    <label for="apellido">Segundo apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Escribe tus apellidos" required>
+                </div>
+            </fieldset>
+
+            </fieldset>
+            <legend>Fecha de Nacimiento</legend>
+            <div id="div_fecha" class="control-group">
+                <label for="fecha">Dia</label>
+                <input type="date" name="fecha" id="fecha">
+            </div>
+            <div id="div_fecha" class="control-group">
+                <label for="fecha">Mes</label>
+                <input type="date" name="fecha" id="fecha">
+            </div>
+            <div id="div_fecha" class="control-group">
+                <label for="fecha">Año</label>
+                <input type="date" name="fecha" id="fecha">
+            </div>
+            </fieldset>
+
+            <fieldset>
+                
+                    <legend>Identificacion</legend>
+                    <div class="control-group">
+                        <label for="email">Cuenta de tu correo</label>
+                        <input type="email" name="email" id="email" required placeholder="Escribe tus correo">
+                    </div>
+                    <div class="control-group">
+                        <label for="passwd">Introduzca su clave de acceso</label>
+                        <input type="password" name="passwd" id="passwd" placeholder="Escribe tus contraseña">
+                    </div>
+                    <div class="control-group">
+                        <label for="passwd">Repita su clave de acceso</label>
+                        <input type="password" name="passwd" id="passwd" placeholder="Escribe tus contraseña">
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <form action="/cursos">
+                    <select name="cursos" size="3">
+                        <option value="volvo">Html</option>
+                        <option value="saab">Css</option>
+                        <option value="fiat">JavaScript</option>
+                        <option value="audi">Php</option>
+                    </select>
+                </form>
+                <legend>Curso</legend>
+                <div class="radio-group">
+                <input type="radio" name="curso" id="web" value="web">
+                <label for="web">Programacion Web</label>
+                <input type="radio" name="curso" id="sistemas" value="sistemas">
+                <label for="sistemas">Programacion de sistemas</label>
+                <input type="radio" name="curso" id="p.objetos" value="p.objetos">
+                <label for="p.objetos">Programacion de Objetos</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend></legend>
+                <textarea name="datos" id="datos" cols="30" rows="10" placeholder="Hoy es Martes dia 16 de abril del 2018 la fecha dada es martes 17 e abril del año 2018 entro de una semana sera lunes 23 de abril del año 2019"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Aficiones</legend>
+                <div class="check-group">
+                    <input type="checkbox" name="isOk1" id="isOk1">
+                    <label for="isOk1">Musica</label>
+                </div>
+                <div class="check-group">
+                    <input type="checkbox" name="isOk2" id="isOk2">
+                    <label for="isOk2">Viajar</label>
+                </div>
+                <div class="check-group">
+                    <input type="checkbox" name="isOk3" id="isOk2">
+                    <label for="isOk2">Pintura</label>
+                </div>
+                <div class="check-group">
+                    <input type="checkbox" name="isOk4" id="isOk2">
+                    <label for="isOk2">Fotografia</label>
+                </div>
+                <div class="check-group">
+                    <input type="checkbox" name="isOk5" id="isOk2">
+                    <label for="isOk2">Cine</label>
+                </div>
+                <div class="check-group">
+                    <input type="checkbox" name="isOk6" id="isOk2">
+                    <label for="isOk2">Lectura</label>
+                </div>
+                <div class="check-group">
+                    <input type="checkbox" name="isOk7" id="isOk2">
+                    <label for="isOk2">Deporte</label>
+                </div>
+                <div class="check-group">
+                    <input type="checkbox" name="isOk8" id="isOk2">
+                    <label for="isOk2">Baile</label>
+                </div>
+            </fieldset>
+            <legend></legend>
+            <div class="control-group">
+
+                <button type="submit" id="btnEnviar">Enviar datos</button>
+                <button type="reset" id="btnBorrar">Restablecer valores</button>
+                <input type="hidden" name="state" value="0">
+
+            </div>
+
+        </form>
+
+    </main>
+
+</body>
+
+
+
+</html>

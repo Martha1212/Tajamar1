@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./form1.css">
+    <script src="./form_app_.1.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <legend>Datos del Alumno</legend>
+    </header>
+    <main>
+        <form action="" method="GET">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div class="control-group1">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="20" autofocus>
+                </div>
+                <div class="control-group1">
+                    <label for="apellido">Primer apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Primer apellido">
+                </div>
+                <div class="control-group1">
+                    <label for="apellido2">Segundo apellido</label>
+                    <input type="text" name="apellido2" id="apellido2" placeholder="Segundo apellido">
+                </div>
+            </fieldset>
+        </fieldset>
+        <legend>Fecha de Nacimiento</legend>
+        <div class="control-Fecha">
+            <label for="fecha"></label>
+            <input type="date" name="day" id="day">
+        </div>
+            </fieldset>
+            <fieldset>
+                <legend>Identificacion</legend>
+                <div class="control-group2">
+                    <label for="email">Cuenta de correo</label>
+                    <input type="email" name="email" id="email" placeholder="Cuenta de Correo">
+                </div>
+                <div class="control-group2">
+                    <label for="inputPass_1 ">Introduzca su clave de acceso</label>
+                    <input type="password" name="inputPass_1" id="inputPass_1" data-num="0" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,12}$"
+                        required />
+                </div>
+                <div class="control-group2">
+                    <label for="inputPass_2 ">Repita su clave de acceso</label>
+                    <input type="password" name="inputPass_2" id="inputPass_2" data-num="1" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,12}$"
+                        required />
+                    <button type="submit" name="boton" id="boton"></button>
+            </fieldset>
+            <fieldset>
+                <legend>Curso</legend>
+                <div class="radio-group">
+                    <input type="radio" name="curso" id="Programador Web" value="Programador Web">
+                    <label for="Programador Web">Programador Web</label>
+                    <input type="radio" name="curso" id="Programador de Sistemas" value="Programador de Sistemas">
+                    <label for="Programador de Sistemas">Programador de Sistemas</label>
+                    <input type="radio" name="curso" id="Programador de Objetos" value="Programador de Objetos">
+                    <label for="Programador de Objetos">Programador de Objetos</label>
+                </div>
+                <div class="control-group">
+                    <label for="curso">cursos</label>
+                    <select name="curso" id="curso">
+                        <option value="front">Html</option>
+                        <option value="web">Css</option>
+                        <option value="node">JavaScrip</option>
+                        <option value="sql">php</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Aficiones</legend>
+                <div class="check-group">
+                    <input type="checkbox" name="isOk1" id="isOk1">
+                    <label for="isOk1">Musica</label>
+                    <input type="checkbox" name="isOk2" id="isOk2">
+                    <label for="isOk2">Cine</label>
+                    <input type="checkbox" name="isOk3" id="isOk3">
+                    <label for="isOk3">Viajar</label>
+                    <input type="checkbox" name="isOk4" id="isOk4">
+                    <label for="isOk4">Lectura</label>
+                    <input type="checkbox" name="isOk5" id="isOk5">
+                    <label for="isOk5">Pintura</label>
+                    <input type="checkbox" name="isOk6" id="isOk6">
+                    <label for="isOk6">Deporte</label>
+                    <input type="checkbox" name="isOk7" id="isOk7">
+                    <label for="isOk7">Fotografia</label>
+                    <input type="checkbox" name="isOk8" id="isOk8">
+                    <label for="isOk8">Baile</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend></legend>
+                <textarea name="datos" id="datos" cols="30" rows="10" placeholder="Hoy es Martes dia 17 de marzo 2018 La fecha dada es viernes dia 20 de marzo dela año 2018 dentro de una semana sera martes 24 de abril del año 2018"></textarea>
+            </fieldset>
+
+            <div class="control-group">              
+                <button type="submit" id="btnEnviar">Enviar datos</button>
+                <button type="reset" id="btnrestablecer">Restablecer</button>
+            </div>
+        </form>
+        <div id="resultados" class="resultados">
+        </div>
+    </main>
+</body>
+
+</html>

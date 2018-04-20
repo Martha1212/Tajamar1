@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario Examen</title>
+  <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" type="module"></script>
+</head>
+<body>
+    <main>
+            <fieldset ><legend class="titulo"> Datos del Alumno</legend>
+        <form action="" method="GET" id='form1'>
+                <fieldset class="Identificacion">
+                        <legend class="titulo">Identificación</legend>
+                        <div class="control-group">
+                            <label for="correo">Cuenta de correo</label>
+                            <input type="email" name="correo" id="correo" 
+                                required placeholder="Escribe tu email">
+                        </div>
+                        <div class="control-group">
+                            <label for="password">Introduzca su clave de acceso</label>
+                            <input type="password" name="password" id="password"  placeholder="Escribe tus contraseña" required>
+                        </div>
+
+                        <div class="control-group">
+                            <label for="password2">Repita la clave de acceso</label>
+                            <input type="password" name="password2" id="password2" placeholder="Escribe tus contraseña" required>
+                        </div>
+                        </fieldset>
+
+            <fieldset class="Datos_personales">
+                <legend class="titulo">Datos personales</legend>
+                <div class="control-group">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="20" 
+                     required minlength="2" autofocus>
+                </div>
+                <div class="control-group">
+                    <label for="apellido">Primer apellido</label>
+                    <input type="text" name="apellido" id="apellido" 
+                    placeholder="Escribe tu primer apellido" required>
+                </div>
+
+                <div class="control-group">
+                    <label for="apellido2">Segundo apellido</label>
+                    <input type="text" name="apellido2" id="apellido2" 
+                    placeholder="Escribe tu segundo apellido" >
+                </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="subtitulo">Fecha de nacimiento</legend>
+                    <div id="div_fecha" class="control-group">
+                        <label for="fecha">Fecha de nacimiento</label>
+                        <input type="date" name="fecha" id="fecha">
+                    </div>                
+                </fieldset>
+
+                <fieldset>
+                    <legend class="titulo">Aficiones</legend>
+                    <div class="check-group">
+                        <input type="checkbox" name="Correcto" id="Correcto">
+                        <label for="Correcto">Música</label>
+                        <input type="checkbox" name="Correcto" id="Correcto2">
+                        <label for="Correcto">Cine</label>
+                        <input type="checkbox" name="Correcto" id="Correcto3">
+                        <label for="Correcto">Viajar</label>
+                        <input type="checkbox" name="Correcto" id="Correcto4">
+                        <label for="Correcto">Lectura</label>
+                        <input type="checkbox" name="Correcto" id="Correcto5">
+                        <label for="Correcto">Pintura</label>
+                        <input type="checkbox" name="Correcto" id="Correcto6">
+                        <label for="Correcto">Deporte</label>
+                        <input type="checkbox" name="Correcto" id="Correcto7">
+                        <label for="Correcto">Fotografía</label>
+                        <input type="checkbox" name="Correcto" id="Correcto8">
+                        <label for="Correcto">Baile</label>
+                    </div>
+                </fieldset>           
+
+                <fieldset>
+                    <legend class="titulo">Curso</legend>
+                    <div class="radio-group">
+                        <input type="radio" name="Opciones" id="Opciones" value="Opciones" checked>
+                        <label for="Opciones">Programador Web</label>
+                        <input type="radio" name="Opciones" id="Opciones2" value="Opciones" >
+                        <label for="Opciones">Programador de Sistemas</label>
+                        <input type="radio" name="Opciones" id="Opciones3" value="Opciones" >
+                        <label for="Opciones">Programador de Objetos</label>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="curso">Selecciona un curso</label>
+                        <select name="curso" id="curso">
+                            <option value=""></option>
+                            <option value="1">Curso1</option>
+                        </select>
+                    </div>
+                    <div id="div_topics" class="control-group ocultar">
+                        <label for="curso"></label>
+                        <select name="topics" id="topics" multiple></select>
+                    </div> 
+                </fieldset>    
+      
+                <fieldset>      
+            <div class="control-group">      
+                <button type="submit" id="btnEnviar">Enviar</button>
+                <button type="reset" id="btnBorrar">Borrar</button>
+                <input type="hidden" name="state" value="0">
+            </div>
+        </fieldset> 
+
+        <fieldset>
+                <textarea name="datos" id="datos" cols="30" rows="10" placeholder="Bien !!"></textarea>
+            </fieldset>
+
+        <fieldset class="divComentario ">
+                <div id="divComentario">
+                </div>
+            </fieldset>
+
+        </form>
+        <div id="resultados" class="resultados">
+        </div>
+    </fieldset>
+    </main>
+</body>
+
+</html>

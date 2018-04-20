@@ -1,0 +1,9 @@
+* {
+
+    box-sizing: border-box
+}
+.header, .footer {
+    min-height: 6rem;
+    background-color: lightpink;
+    color: mediumpurple;
+}
